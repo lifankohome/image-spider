@@ -7,7 +7,7 @@
 
 1　　$auto = new Auto();
 
-2　　$url = 'https://www.hhh399.com/htm/girllist2/';
+2　　$url = 'https://www.hhh397.com/htm/girllist2/';
 
 3　　$auto->get($url, 20, ['1.htm','2.htm','3.htm','4.htm','5.htm','6.htm','7.htm','8.htm','9.htm','10.htm','11.htm']);
 
