@@ -15,7 +15,7 @@
 
 get()参数：
 
-　　[链接]   [人物数量（最多是20个，每个分类里的最后一页可能不到20个，第4行可以让代码修改更简单）]    [页面名称]
+　　[链接]   [人物数量（最多是20个，每个分类里的最后一页可能不到20个，第4行可以用来获取最后一页）]    [页面名称]
 
 
 　　代码执行时间视图片数量不同，如果你的网络较差，可能执行时间会超过配置文件的最大执行时间，So you should edit [php.ini] to ensure that the program can work well if you have a bad Internet Connection，我这边网络较好，爬了大概30k链接都未出现异常。
