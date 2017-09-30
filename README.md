@@ -2,7 +2,7 @@
 开车了，抓稳看好，别把方向盘搞丢。
 
 ## FBI-WARNING：未满18岁请止步！！！
-### 不过，未满18能看懂这个应该对这个也不会太感兴趣~
+### 不过，未满18能看懂这个应该对那个也不会太感兴趣~
 
 使用方法：找到自己喜欢的分类，复制链接，输入到url中
 
@@ -25,4 +25,4 @@ get()参数：
 
 　　By the way: The links of images would storage in [$filePath], which could be modified.
 
-It's unbelievable, I just click the link, the domain should jump to https://www.hhh397.com, maybe the domain is different between day and night, I don't know. But nothing serious, you can make it!
+It's unbelievable, I just click the link, the domain should jump to hhh397.com, maybe the domain is different between day and night, I don't know. But nothing serious, you can make it!
