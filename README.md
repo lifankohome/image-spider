@@ -7,7 +7,7 @@
 使用方法：找到自己喜欢的分类，复制链接，输入到url中
 
 示例：
-
+```
 1　　$auto = new Auto();
 
 2　　$url = 'https://www.hhh399.com/htm/girllist8/';
@@ -15,6 +15,7 @@
 3　　$auto->get($url, 20, ['1.htm','2.htm','3.htm','4.htm','5.htm','6.htm','7.htm','8.htm','9.htm','10.htm','11.htm']);
 
 4　　//$auto->get($url, 14, ['12.htm']);
+```
 
 get()参数：
 
