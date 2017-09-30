@@ -28,4 +28,4 @@ get()参数：
 
     By the way: The links of images would storage in [$filePath], which could be modified.
 
-    It's unbelievable, I just click the link, the domain should jump to hhh397.com, maybe the domain is different between day and night, I don't know. But nothing serious, you can make it!
+It's unbelievable, I just click the link, the domain should jump to hhh397.com, maybe the domain is different between day and night, I don't know. But nothing serious, you can make it!
