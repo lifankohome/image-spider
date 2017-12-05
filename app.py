@@ -42,7 +42,7 @@ def getKind(dom):
 
     result = elements.xpath('//*[@class="post-home"]')
 
-    file = open('hhh.txt', 'w')
+    file = open('imgLink.txt', 'w')
 
     n = 0
     total = 0
@@ -56,7 +56,8 @@ def getKind(dom):
         img_elements = etree.HTML(img_dom)
         img_address = img_elements.xpath('//*[@id="gallery-1"]/dl')
 
-        if n < 6:
+        # 如果爬取发生了中断，可在这里设置跳过页面
+        if n < 1:
             print('跳过页面，序号：', n)
             continue
 
