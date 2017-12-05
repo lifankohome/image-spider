@@ -1,31 +1,71 @@
-# php-spider
-开车了，抓稳看好，别把方向盘搞丢。
+## Image-Spider
+##### FBI-WARNING：坐稳扶好，别把方向盘搞丢
 
-## FBI-WARNING：未满18岁请止步！！！
-### 不过，未满18能看懂这个应该对那个也不会太感兴趣~
+### Demo
 
-使用方法：找到自己喜欢的分类，复制链接，输入到url中
+The two spider get images from different website, and they don't have a equal performance.
 
-示例：
+#### Php-spider:
+
 ```
-1　　$auto = new Auto();
-
-2　　$url = 'https://www.hhh399.com/htm/girllist8/';
-
-3　　$auto->get($url, 20, 
-               ['1.htm','2.htm','3.htm','4.htm','5.htm',
-               '6.htm','7.htm','8.htm','9.htm','10.htm','11.htm']);
-
-4　　//$auto->get($url, 14, ['12.htm']);
+$auto = new Auto();
+$url = 'https://www.hhh399.com/htm/girllist8/';
+$auto->get($url, 20, ['1.htm','2.htm','3.htm','4.htm','5.htm','6.htm','7.htm','8.htm','9.htm','10.htm','11.htm']);
 ```
 
-get()参数：
+You can get about 30,000 images of pretty girl in one minute.（o-o）
 
-　　[链接]   [人物数量（最多是20个，每个分类里的最后一页可能不到20个，第4行可以用来获取最后一页）]    [页面名称]
+##### parameter:
 
+```
+get(
+    $url: website
+    $num: how many pics in one webpage
+    array: which web page do you want to spide
+)
+```
 
-　　代码执行时间视图片数量不同，如果你的网络较差，可能执行时间会超过配置文件的最大执行时间，So you should edit [php.ini] to ensure that the program can work well if you have a bad Internet Connection，我这边网络较好，爬了大概30k链接都未出现异常。
+Image links would save in **$filePath**, which could be modified:
 
-　　By the way: The links of images would storage in [$filePath], which could be modified.
+```
+...
+public function txtImg($str)
+    {
+        $filePath = "D://Xampp//htdocs//pyPic//log.txt";
+...
+```
 
-　　It's unbelievable, I just click the link, the domain should jump to hhh397.com, maybe the domain is different between day and night, I don't know. But nothing serious, you can make it!
+Hope you enjoy this!
+
+#### Python-spider：
+
+```
+$ python app.py
+```
+Images would storage in 'E://spiderBuff', and all urls of images would be written in 'imgLink.txt'.
+
+You can get about 1139 image links in about 32.88s, if you want to save them at the same time, program will slow down severe according to image's size.
+
+##### Disable image save:
+
+Comment code below:
+
+```
+            filename = img_address_multi.split('/')[-1]
+            save_path = 'E://spiderBuff//' + filename
+
+            urllib.request.urlretrieve(img_address_multi, save_path)
+            print(n, total, 'Saved')
+
+            if len(filename) < 10:
+                new_dir_name = "E://" + filename.split('.')[0]
+                os.rename('E://spiderBuff', new_dir_name)
+                print('重命名文件夹：', new_dir_name)
+                os.mkdir('E://spiderBuff')
+```
+
+##### Feature:
+
+Image could be sorted and save in different folder.
+
+Hope you enjoy this!
