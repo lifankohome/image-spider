@@ -1,11 +1,9 @@
 ## Image-Spider
 ##### FBI-WARNING：坐稳扶好，别把方向盘搞丢
 
-### Demo
-
 The two spider get images from different website, and they don't have a equal performance.
 
-#### Php-spider:
+### Php-spider:
 
 ```
 $auto = new Auto();
@@ -15,7 +13,7 @@ $auto->get($url, 20, ['1.htm','2.htm','3.htm','4.htm','5.htm','6.htm','7.htm','8
 
 You can get about 30,000 images of pretty girl in one minute.（o-o）
 
-##### parameter:
+#### parameter:
 
 ```
 get(
@@ -37,7 +35,7 @@ public function txtImg($str)
 
 Hope you enjoy this!
 
-#### Python-spider：
+### Python-spider:
 
 ```
 $ python app.py
@@ -46,7 +44,7 @@ Images would storage in 'E://spiderBuff', and all urls of images would be writte
 
 You can get about 1139 image links in about 32.88s, if you want to save them at the same time, program will slow down severe according to image's size.
 
-##### Disable image save:
+#### Disable image save:
 
 Comment code below:
 
@@ -64,7 +62,7 @@ Comment code below:
                 os.mkdir('E://spiderBuff')
 ```
 
-##### Feature:
+#### Feature:
 
 Image could be sorted and save in different folder.
 
